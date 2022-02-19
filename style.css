@@ -1,0 +1,80 @@
+/* body {
+  min-height: 3000px;
+} */
+
+.jumbotron {
+  padding: 10rem 5rem;
+  background-image: url(img/bg-jumbotron2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -50px;
+  overflow: hidden;
+}
+
+.card {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.card.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#projects {
+  background-image: url(img/bg-projects.png);
+}
+
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron p {
+  text-shadow: 1px 1px 10px rgba(61, 61, 61, 0.5);
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.about {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.about.aMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.aKiri,
+.aKanan {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 1s;
+}
+
+.aButton {
+  opacity: 0;
+  transform: translate(0, 50px);
+}
+
+.aKanan {
+  transition: 3s;
+}
+
+.aButton {
+  transition: 5s;
+}
+
+.aKiri.aMuncul,
+.aKanan.aMuncul,
+.aButton.aMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* .aTengah {
+  opacity: 0;
+  transform: translate(0, 50px);
+} */
